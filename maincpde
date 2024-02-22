@@ -2,14 +2,14 @@ int i = 0;  // переменная для счетчика имитирующе
 int led = 13; 
 
 void setup() {
-  Serial.begin(9600);    // установим скорость обмена данными
-  pinMode(led, OUTPUT);  // и режим работы 13-ого цифрового пина в качестве выхода
+  Serial.begin(9600);    // hello
+  pinMode(led, OUTPUT);  // nice here
 }
 void loop() {
-  i = i + 1;  // чтобы мы смогли заметить что данные изменились
+  i = i + 1; 
   String stringOne = "Info from Arduino ";
-  stringOne += i;  // конкатенация
-  Serial.println(stringOne);  // отправляем строку на порт
+  stringOne += i;  
+  Serial.println(stringOne);  // arduino robot
 
   char incomingChar;
 
